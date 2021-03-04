@@ -1,0 +1,148 @@
+body{
+    background: wheat ;
+    height: 150vh;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/originals/b8/33/69/b833697b7c5f1222e576ddba8f50c497.jpg');
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+p.sub-title{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#contact-container{
+    width:1200px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    backdrop-filter: blur(20px);
+    border:1px solid rgba(255,255,255,.2);
+    -webkit-box-shadow: -10px -1px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px -1px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px -1px 18px 0px rgba(0,0,0,0.75);
+
+    .contact-info{
+        border-radius: 15px;
+        background-color: #656b66;
+        flex: 0 1 40%;
+        padding: 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        h4{
+            font-size: 2rem;
+            font-weight: 500;
+            //margin-top: 0;
+            margin: 0;
+        }
+        p{
+            color: rgba(255,255,255,.7);
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        .icon-text{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 2rem;
+            .fa{
+                flex: 0 0 40px;
+                font-size: 1.8rem;
+                margin-right: 2rem;
+                color: #404746;
+            }
+            span{
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+        .social-media{
+            display: flex;
+            width: 50%;
+            display:flex;
+            justify-content: space-between;
+            .icon-circle{
+                flex: 0 0 40px;
+                padding: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                border-radius: 50%;
+                transition: .3s all ease-in-out;
+                &:hover{
+                    background: #191a19;
+                }
+                .fa{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    form{
+        padding: 40px;
+        width: 100%;
+        .col{
+            display: flex;
+            width:100%;
+            flex:0 0 100%;
+        }
+        .form-group{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            flex:0 1 100%;
+            padding-right: 40px;
+            label{
+                font-size:.9;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #238499;
+                margin-bottom: 1rem;
+            }
+            input[type="text"],input[type="email"],input[type="tel"],textarea{
+                background: rgba(24, 30, 34, 0.472);
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: white;
+                border-bottom: 2px solid rgba(255,255,255,.4);
+                transition: all .3s ease-in-out;
+                margin-bottom: 2rem;
+                &:focus{
+                    border:none;
+                    border-bottom: 2px #191a19;
+                }
+            }
+            &:nth-child(2){
+                padding-right: 0;
+            }
+            &.solo{
+                padding:0;
+            }
+            &.right{
+                align-items: flex-end;
+            }
+            button{
+                width: 200px;
+                height: 60px;
+                cursor: pointer;
+                border: none;
+                text-transform:uppercase;
+                border-radius: 10px;
+            }
+        }
+        
+    }
+
+
+}
